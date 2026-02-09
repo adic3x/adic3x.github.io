@@ -1,0 +1,108 @@
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg,
+        rgba(255, 46, 58, 0.8) 85deg,
+        rgba(255, 145, 56, 0.8) 87deg,
+        rgba(255, 204, 82, 0.8) 89deg,
+        rgba(30, 190, 170, 0.8) 91deg,
+        rgba(50, 140, 190, 0.8) 93deg,
+        rgba(40, 70, 130, 0.8) 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg,
+        rgba(255, 170, 50, 0.8) 85deg,
+        rgba(255, 210, 80, 0.8) 87deg,
+        rgba(230, 240, 100, 0.8) 89deg,
+        rgba(100, 220, 180, 0.8) 91deg,
+        rgba(50, 190, 220, 0.8) 93deg,
+        rgba(30, 130, 180, 0.8) 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg,
+        rgba(250, 57, 70) 85deg,
+        rgba(244, 162, 97) 87deg,
+        rgba(233, 196, 106) 89deg,
+        rgba(42, 157, 143) 91deg,
+        rgba(69, 123, 157) 93deg,
+        rgba(29, 53, 87) 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        rgb(150, 90, 80) 85deg,
+        rgb(170, 130, 100) 87deg,
+        rgb(160, 160, 110) 89deg, 
+        rgb(90, 120, 100) 91deg,
+        rgb(70, 100, 110) 93deg,
+        rgb(50, 70, 80) 95deg, 
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        rgb(190, 175, 130) 85deg,
+        rgb(170, 180, 140) 87deg,
+        rgb(140, 180, 170) 89deg,
+        rgb(100, 160, 170) 91deg,
+        rgb(70, 130, 160) 93deg,
+        rgb(50, 80, 120) 95deg,
+        transparent 97deg
+    ); */
+
+    /* Good for dark */
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        #7d4122 85deg,
+        #e06b2f 87deg,
+        #f2a47d 89deg,
+        #6ea8ff 91deg,
+        #0a58b8 93deg,
+        #052d5e 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        #ffb86b 85deg, 
+        #ffd28a 87deg,
+        #a8e6ff 89deg,
+        #6ea8ff 91deg, 
+        #3d85e6 93deg, 
+        #5c8bd0 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        #ffb86b 85deg, 
+        #ffcc80 87deg,
+        #80f2dd 89deg,
+        #6ea8ff 91deg, 
+        #3d85e6 93deg, 
+        #5c8bd0 95deg,
+        transparent 97deg
+    ); */
+
+    /* background: conic-gradient(
+        from 0deg at 0% 50%,
+        transparent 83deg, 
+        #ffb86b 85deg, 
+        #ffe4b5 87deg,
+        #add8e6 89deg,
+        #6ea8ff 91deg, 
+        #3d85e6 93deg, 
+        #5c8bd0 95deg,
+        transparent 97deg
+    ); */
