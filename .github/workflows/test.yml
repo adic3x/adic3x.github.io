@@ -1,0 +1,20 @@
+name: Hello World Debug
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: |
+          echo "Hello world"
+          echo "cd: $(pwd)"
+
+      - name: Check files structure
+        run: |
+          ls -R
