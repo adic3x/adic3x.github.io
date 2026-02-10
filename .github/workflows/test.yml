@@ -18,3 +18,7 @@ jobs:
       - name: Check files structure
         run: |
           ls -R
+
+      - name: Check cargo
+        run: |
+          cargo -V
