@@ -287,6 +287,11 @@ h2 {
     text-shadow: 0 0 32px var(--muted);
 }
 
+.prism-container a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 time {
     font-style: italic;
     color: var(--muted);
