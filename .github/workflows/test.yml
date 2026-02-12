@@ -29,7 +29,7 @@ jobs:
                               --clobber
 
       - name: Make executable
-        run: chmod +x ./generator
+        run: chmod +x ./blog_generator
 
       - name: Run version check
-        run: ./generator -V
+        run: ./blog_generator -V
