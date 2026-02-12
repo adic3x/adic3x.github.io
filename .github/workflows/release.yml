@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  debug_check:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
