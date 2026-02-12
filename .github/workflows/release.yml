@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches: ["main"]
+  # workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  debug_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+          
+      - name: Download Engine Binary via GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download --repo adic3x/blog_generator \
+                              --pattern 'blog_generator_linux' \
+                              --output blog_generator \
+                              --clobber
+          chmod +x ./blog_generator
+
+      - name: Run generation
+        run: |
+          mkdir -p public
+          ./blog_generator --sitename "adic3x blog"
+          cp assets/style.css public/style.css
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true 
