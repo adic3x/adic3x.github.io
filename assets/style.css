@@ -128,6 +128,7 @@ header {
 footer {
     padding: 20px 0;
     font-size: 0.8em;
+    text-align: center;
     color: var(--muted);
 }
 
