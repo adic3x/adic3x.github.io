@@ -1,7 +1,12 @@
 name: Hello World Debug
 
 on:
+  # push:
+  #   branches: ["main"]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   debug_check:
@@ -10,14 +15,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Say Hello
-        run: |
-          echo "Hello world"
-          echo "cd: $(pwd)"
+      # - name: Say Hello
+      #   run: |
+      #     echo "Hello world"
+      #     echo "cd: $(pwd)"
 
-      - name: Check files structure
-        run: |
-          ls -R
+      # - name: Check files structure
+      #   run: |
+      #     ls -R
           
       - name: Download Engine Binary via GitHub CLI
         env:
@@ -27,9 +32,23 @@ jobs:
                               --pattern 'blog_generator_linux' \
                               --output blog_generator \
                               --clobber
+          chmod +x ./blog_generator
 
-      - name: Make executable
-        run: chmod +x ./blog_generator
+      # - name: Make executable
+      #   run: chmod +x ./blog_generator
 
-      - name: Run version check
-        run: ./blog_generator -V
+      # - name: Run version check
+      #   run: ./blog_generator -V
+
+      - name: Run generation
+        run: |
+          mkdir -p public
+          ./blog_generator --sitename "adic3x blog"
+          cp assets/style.css public/style.css
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true 
