@@ -117,7 +117,6 @@ main {
 
 header, footer {
     margin: 0 auto;
-    /* padding: 8px 0; */
     flex-shrink: 0;
 }
 
@@ -150,14 +149,14 @@ pre code {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 1.15;
     margin: 0.6em 0 0.35em;
     text-align: center;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.25;
     margin: 0.75em 0 0.3em;
 }
@@ -190,10 +189,11 @@ h2 {
 }
 
 .prism-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    letter-spacing: 0.05em;
-    padding: 8px 28px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
     margin: 0;
     position: relative;
     z-index: 2;
