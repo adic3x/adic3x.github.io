@@ -110,7 +110,7 @@ body::before {
         var(--noise), 
         linear-gradient(to bottom, var(--bg), var(--bg-end));
     background-blend-mode: overlay; 
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 a {
