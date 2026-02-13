@@ -113,9 +113,9 @@ right: 0;
     background: 
         /* linear-gradient(to bottom, var(--bg), var(--bg-end)),
         var(--noise); */
-        /* var(--noise),  */
+        var(--noise), 
         linear-gradient(to bottom, var(--bg), var(--bg-end));
-    /* background-blend-mode: overlay;  */
+    background-blend-mode: overlay; 
     /* background-attachment: fixed; */
 }
 
