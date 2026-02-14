@@ -9,6 +9,19 @@ Generation check. Our pros:
 
 Inline code example: `let a = 0;`. Just for test.
 
+> Some quote
+
+Text...
+
+> Quote 1
+> Quote 2
+
+Text...
+
+> Quote 1
+
+> Quote 2
+
 ```rust
 fn main() {
     println!("Hello, World!");
