@@ -76,7 +76,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* height: 100dvh; */
     font-size: 16px;
     min-width: 310px;
 }
@@ -143,7 +142,7 @@ footer {
 
 code {
     background: var(--code-bg);
-    padding: 0 0.25em;
+    padding: 3px;
     border-radius: 4px;
     border: 1px solid var(--code-border);
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
@@ -219,6 +218,7 @@ h2 {
     right: 100%;
     width: 360px;
     height: 2px;
+    pointer-events: none;
     background: linear-gradient(to left, var(--text), transparent);
     filter: blur(0.5px);
 }
@@ -231,6 +231,7 @@ h2 {
     transform: translateY(-50%);
     width: 400px;
     height: 128px;
+    pointer-events: none;
 
     background: conic-gradient(
         from 0deg at 0% 50%,
